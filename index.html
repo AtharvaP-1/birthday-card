@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday, My Love</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", sans-serif;
+      color: #5c1a34;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -2;
+      background-image: url('image.jpg'), url('image2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: blur(15px) brightness(0.8);
+      animation: fadeIn 2s ease;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom right, rgba(255, 221, 225, 0.3), rgba(249, 159, 201, 0.2));
+      z-index: -1;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      max-width: 700px;
+      z-index: 1;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      color: #8b2e4e;
+      animation: heartBeat 2s infinite;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+
+    .emoji {
+      font-size: 1em;
+      animation: pulse 1.5s infinite;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.6em;
+      margin: 20px 0;
+      color: #6e3b6e;
+    }
+
+    strong {
+      color: #b76e79;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heartBeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Birthday, My Love <span class="emoji">💖</span></h1>
+
+    <p>
+      Every moment with you feels like magic, and today, the world shines a little brighter just for you. 🌟<br /><br />
+      Your smile lights up my life, your laugh is my favorite melody, and your heart is my home.
+    </p>
+    <p>
+      I’m endlessly grateful to celebrate you today and always. Here’s to more memories, love, and adventures together.
+      You are my everything. 💕
+    </p>
+    <p>
+      Forever yours,<br /><strong>Atharva Pandit</strong>
+    </p>
+  </div>
+</body>
+</html>
